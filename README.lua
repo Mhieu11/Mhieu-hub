@@ -2,7 +2,7 @@ repeat task.wait(0.1) until game.Players.LocalPlayer
 
 if not game:IsLoaded() then
 	local GameLoadGui = Instance.new("Message",workspace);
-	GameLoadGui.Text = 'pls wait for script';
+	GameLoadGui.Text = 'Wait Game Loading';
 	game.Loaded:Wait();
 	GameLoadGui:Destroy();
 	task.wait(10);
@@ -153,7 +153,7 @@ function Update:Window(text, logo, keybind)
     Logo.BackgroundTransparency = 1.000
     Logo.Position = UDim2.new(0, 5, 0, -115)
     Logo.Size = UDim2.new(0, 80, 0, 80) --330280
-    Logo.Image = "rbxassetid://13068478162"
+    Logo.Image = "rbxassetid://14645512457"
 
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
@@ -242,7 +242,7 @@ BtnStroke.Name = "BtnStroke"
     MainPage.Name = "MainPage"
     MainPage.Parent = Page
     MainPage.ClipsDescendants = true
-    MainPage.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+    MainPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     MainPage.BackgroundTransparency = 1.000
     MainPage.Size = UDim2.new(0, 410, 0, 308) --410308
 
@@ -277,7 +277,7 @@ BtnStroke.Name = "BtnStroke"
             end
         end
     end)
- if _G.Mode == "English" then
+ if _G.Mode == "Mhieu Hub" then
     Frame.Parent = Main
     Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Frame.BackgroundTransparency = 1.000
@@ -294,13 +294,13 @@ BtnStroke.Name = "BtnStroke"
     TextLabel.Position = UDim2.new(0.199847102, 0, 0.25, 0)
     TextLabel.Size = UDim2.new(0, 200, 0, 50)
     TextLabel.Font = Enum.Font.FredokaOne
-    TextLabel.Text = "Mhieu Hub"
+    TextLabel.Text = "English Version"
     TextLabel.TextColor3 = Color3.fromRGB(0, 86, 255)
     TextLabel.TextSize = 18.000
     TextLabel.TextWrapped = true
  else
     Frame.Parent = Main
-    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
     Frame.BackgroundTransparency = 1.000
     Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Frame.BorderSizePixel = 0
@@ -332,7 +332,7 @@ BtnStroke.Name = "BtnStroke"
         TabButton.Parent = ScrollTab
         TabButton.Name = text .. "Server"
         TabButton.Text = ""
-        TabButton.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+        TabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         TabButton.BackgroundTransparency = 1.000
         TabButton.Size = UDim2.new(0, 120, 0, 25)
         TabButton.Font = Enum.Font.GothamSemibold
@@ -622,7 +622,7 @@ UICornerFrame.Parent = TabFrame
 
             Button.Name = "Button"
             Button.Parent = MainFramePage
-            Button.BackgroundColor3 = Color3.new(0, 0, 0)
+            Button.BackgroundColor3 = Color3.new(35, 36, 35)
             Button.Size = UDim2.new(0, 387, 0, 31)
 
             UICorner.CornerRadius = UDim.new(0, 5)
@@ -636,7 +636,7 @@ UICornerFrame.Parent = TabFrame
             TextBtn.AutoButtonColor = false
             TextBtn.Font = Enum.Font.GothamSemibold
             TextBtn.Text = text
-            TextBtn.TextColor3 = Color3.fromRGB(0, 0, 0)
+            TextBtn.TextColor3 = Color3.fromRGB(35, 36, 35)
             TextBtn.TextSize = 15.000
 
             UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -1057,7 +1057,7 @@ Title.TextXAlignment = Enum.TextXAlignment.Left
                 local Item = Instance.new("TextButton")
                 Item.Name = "Item"
                 Item.Parent = DropScroll
-                Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                Item.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
                 Item.BackgroundTransparency = 1.000
                 Item.Size = UDim2.new(0, 385, 0, 26)
                 Item.Font = Enum.Font.GothamSemibold
