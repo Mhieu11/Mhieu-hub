@@ -5,13 +5,11 @@ end
 
 pcall(function() getgenv().IY_LOADED = true end)
 
-if not game:IsLoaded() then
-    local notLoaded = Instance.new("Message")
-    notLoaded.Parent = COREGUI
-    notLoaded.Text = "Infinite Yield is waiting for the game to load"
-    game.Loaded:Wait()
-    notLoaded:Destroy()
-end
+local cloneref = cloneref or function(o) return o end
+COREGUI = cloneref(game:GetService("CoreGui"))
+Players = cloneref(game:GetService("Players"))
+
+
 
 currentVersion = "5.9.7"
 
